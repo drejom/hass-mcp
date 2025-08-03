@@ -48,10 +48,6 @@ jobs:
             --generate-notes \
             --draft=false
 
-      - name: Trigger PyPI Publish
-        run: |
-          echo "PyPI publish will be triggered by the release event"
-
       - name: Trigger Docker Build
         run: |
           echo "Docker build will be triggered by the tag push"
